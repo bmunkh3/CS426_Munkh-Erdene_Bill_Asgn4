@@ -1,13 +1,21 @@
-# Memory Employees
+# Assignment 04: Physics, Textures, and Lights
 
-**Memory Employees** is a cooperative game, where players have the goal to prevent data overflow in memory due to data thieves attempting to shut the system down to steal data. Players have the goal to keep processing input data spheres to the best of their ability, as the farther the game progresses the faster the data spheres will start spawning.
+**Memory Employees** is a cooperative game, where players have the goal to prevent data overflow in memory due to data thieves attempting to shut the system down to steal data. Players have the goal to keep processing input data spheres to the best of their ability, as the farther the game progresses the faster the data spheres will start spawning. 
 
 ---
+## New Design Changes:
+Looking over my group's Assignment 2, I thought we lacked clear instructions on what the player's goal should be to win the game. So, I implemented some changes to the lightning to guide the player on the steps they need to take by color coding the different lights based on the Devices. This design change aims to assist the player visually without direct instruction. Additionally, aside from the quick pace of our game being the challenge of it, I thought the map could use more navigational challenges and physics constructs that collide with the player, as well as the spheres. This proved to be a good design choice, as these physics constructs collide with the Devices as well, which can block the CPU devices from accepting any Input spheres, as well as blocking the player from the Output/CPU devices.
 
-## Gameplay Overview
+### Physics Constructs:
+Hazardous walls, being leftovers from cached in memory, that bounce and react upon collision with the player, as well as the data spheres. When the player throws a data sphere at one of these constructs, the walls recoil and bounce back, and the spheres obviously bounce away from the wall as well.
 
-### Objective:
-Rescue. Avoid data overflow in memory by successfully processing and delivering data.
+### Billboards:
+I used a 3d object: quads and a texture for a lightbulb to represent a light source to the player. The quad is set up as a billboard, meaning it always faces the camera. This technique not only enhances the visual appeal of the game but also reinforces the theme of Computer Architecture by symbolizing a functional, dynamic light source that guides the player through the level.
+
+### Lights:
+Since the concept of the game is that the player is an employee working in the Memory of a computer device, and monitors being output devices. I used RGB colors to represent each device with a distinctly colored light source (lightbulb), since modern displays use the RGB color model to render images, making RGB an important part of how computers visualize data. This naturally tied into my idea of using light and color to represent different components in Computer Architecture. To sum it up, I used the lights to color code the objectives. (Input Devices = lightbulb billboard with blue light, CPU Devices = lightbulb billboard with green light, Output Devices = lightbulb billboard with red light.)
+
+---
 
 ### Serious Objective:
 Learn about computer architecture, specifically input data overflow in memory, and understand its effects on system performance.
@@ -67,5 +75,7 @@ If memory is overwhelmed with excessive data, it can lead to a memory leak, caus
 
 ---
 
+
+
 ## Credits
-Developed by Bill Munkh-Erdene, Habeeb Rehman, Sai Samith Reddy Sudini @ CS426, Spring 2025 by Liz Marai.
+Developed by Bill Munkh-Erdene @ CS426, Spring 2025 by Liz Marai.
