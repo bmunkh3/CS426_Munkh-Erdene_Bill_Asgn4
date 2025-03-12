@@ -23,7 +23,7 @@ Learn about computer architecture, specifically input data overflow in memory, a
 ---
 
 ## Player Interaction Pattern
-- **Cooperative Play**: Work together to prevent memory leaks.
+- **Single Player VS. Game**: For this game, the player experience is intended to just be single player.
   
 ---
 
@@ -57,6 +57,8 @@ Learn about computer architecture, specifically input data overflow in memory, a
 - **Input Devices**: Machines that emit unprocessed data spheres.
 - **CPU Interpreter**: Processes unprocessed data spheres and outputs processed data spheres.
 - **Output Devices**: Accept CPU processed data spheres only.
+- **Billboards**: Light source with a lightbulb texture always facing the player.
+- **Hazardous Walls**: Obstacles that collide with the objectives and the player.
 
 ---
 
